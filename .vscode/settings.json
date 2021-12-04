@@ -1,7 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "ProblemTwo/evenFibonacciNums",
-        "ProblemOne/MultiplesOf3or5",
-        "ProblemThree/largestPrimeFactor"
+        "[2]ProblemTwo/evenFibonacciNums",
+        "[1]ProblemOne/MultiplesOf3or5",
+        "[3]ProblemThree/largestPrimeFactor"
     ]
 }
