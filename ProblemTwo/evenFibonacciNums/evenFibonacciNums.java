@@ -5,9 +5,10 @@ public class evenFibonacciNums {
         int iCurrentTerm = 2;
         int iTempTerm = 0;
         int iPreviousTerm = 1;
+        System.out.println(iPreviousTerm);
+
 
         for(int i = 0; i <iAmountOfTerms; i++){
-            System.out.println(iPreviousTerm);
             System.out.println(iCurrentTerm);
 
             iTempTerm = iCurrentTerm;
