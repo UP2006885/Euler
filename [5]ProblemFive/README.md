@@ -7,3 +7,5 @@
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 ### Solution
+
+The smallest positive number that is evenly divisible by by all numbers from 1-20 is: **232792560**
