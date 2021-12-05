@@ -1,14 +1,28 @@
 public class largestPrimeFactor{
     public static void main(String[] args) {
-        int iFactorOF = 32;
+        int iFactorOF = 13195;
+        int iNewFactorOF = iFactorOF;
+        int iLargestFactor = 0;
+        int counter = 2; // Its not 1 or 0 because those are of none imporance with factors (0 and 1 would be factors we arent looking for those.)
 
-        for(int i = 1; i <= iFactorOF; i++){
-            /* Simply a factor is a number in which can be devided with its factor parent, to create a whole number. 
-            For example 2 is a factor of 8, because the result is 4. 3 is not a factor as the result would have a decimal value. */
-            if((iFactorOF % i) == 0){
-                System.out.println("A factor of " + iFactorOF + " is: " +i);
+        while(counter * counter <= iNewFactorOF){
+            if (iNewFactorOF % counter == 0){
+                iNewFactorOF = iNewFactorOF / counter;
+                iLargestFactor = counter;
+                System.out.println(counter);
+            } else {
+                counter++;
             }
         }
+        if (iNewFactorOF > iLargestFactor) {
+            iLargestFactor = iNewFactorOF;
+        }    
 
+        System.out.println("Largest Prime Factor: " + iLargestFactor);
+
+        /* A prime number is a number that can only be divided by itself and 1 without remainders. 
+        For example: 5 is a prime number as it can only be devised by 5 and 1.
+                     4 is not as it can be devised by 2.
+        */
     }
 }
