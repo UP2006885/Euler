@@ -1,9 +1,10 @@
 public class largestPrimeFactor{
     public static void main(String[] args) {
-        int iFactorOF = 13195;
-        int iNewFactorOF = iFactorOF;
-        int iLargestFactor = 0;
-        int counter = 2; // Its not 1 or 0 because those are of none imporance with factors (0 and 1 would be factors we arent looking for those.)
+        // I am using the long data type. (Use L after the variable to indicate it is a Long value.) This is because the problem requires me to compute a large value outside the maximum value size of an int.
+        long iFactorOF = 600851475143L; 
+        long iNewFactorOF = iFactorOF;
+        long iLargestFactor = 0L;
+        long counter = 2L; // Its not 1 or 0 because those are of none imporance with factors (0 and 1 would be factors we arent looking for those.)
 
         while(counter * counter <= iNewFactorOF){
             if (iNewFactorOF % counter == 0){
