@@ -1,12 +1,13 @@
 {
     "java.project.sourcePaths": [
-        "[7]ProblemSeven/oneThousandAndOnePrime",
-        "[6]ProblemSix/sumSquareDifference",
-        "[5]ProblemFive/smallestMultiple",
-        "[4]ProblemFour/largestPalindromeProduct",
-        "[3]ProblemThree/largestPrimeFactor",
-        "[2]ProblemTwo/evenFibonacciNums",
-        "[1]ProblemOne/MultiplesOf3or5",
-        "[8]ProblemEight/largestProductSeries"
+        "[1-100]Problems/[1-25]/[8]ProblemEight/largestProductSeries",
+        "[1-100]Problems/[1-25]/[7]ProblemSeven/oneThousandAndOnePrime",
+        "[1-100]Problems/[1-25]/[6]ProblemSix/sumSquareDifference",
+        "[1-100]Problems/[1-25]/[5]ProblemFive/smallestMultiple",
+        "[1-100]Problems/[1-25]/[4]ProblemFour/largestPalindromeProduct",
+        "[1-100]Problems/[1-25]/[3]ProblemThree/largestPrimeFactor",
+        "[1-100]Problems/[1-25]/[2]ProblemTwo/evenFibonacciNums",
+        "[1-100]Problems/[1-25]/[1]ProblemOne/MultiplesOf3or5",
+        "[1-100]Problems/[1-25]/[1]ProblemOne/MultiplesOf3or5"
     ]
 }
