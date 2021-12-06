@@ -23,13 +23,25 @@ public class largestProductSeries{
 
         long greatestProduct = 0L;
         long tempGreatestProduct = 0L;
-
-        for(int i = 0; i < groupOfIntegers.length; i++){
-           // [i] * [i+1] * [i+2] * [i+3];
+        // First 4 adjacent
+        for(int i = 0; i < groupOfIntegers.length-3; i++){
+           // groupOfIntegers[i] * groupOfIntegers[i+1] * groupOfIntegers[i+2] * groupOfIntegers[i+3];
             tempGreatestProduct = groupOfIntegers[i] * groupOfIntegers[i+1] * groupOfIntegers[i+2] * groupOfIntegers[i+3];
             if(tempGreatestProduct > greatestProduct){
                 greatestProduct = tempGreatestProduct;
                 System.out.println("The new greatest Product is "+groupOfIntegers[i]+" * "+groupOfIntegers[i+1]+" * "+groupOfIntegers[i+2]+" * "+groupOfIntegers[i+3]+" which is: "+greatestProduct);
+            }
+        }
+
+        greatestProduct = 0L; // Resets variable inbetween.
+
+        // First 13 adjacent. 
+        for(int i = 0; i < groupOfIntegers.length-12; i++){ // Stops the program from overrunning.
+            // groupOfIntegers[i] * groupOfIntegers[i+1] * groupOfIntegers[i+2] * groupOfIntegers[i+3] * groupOfIntegers[i+4] * groupOfIntegers[i+5] * groupOfIntegers[i+6] * groupOfIntegers[i+7] * groupOfIntegers[i+8] * groupOfIntegers[i+9] * groupOfIntegers[i+10] * groupOfIntegers[i+11] * groupOfIntegers[i+12]
+            tempGreatestProduct = groupOfIntegers[i] * groupOfIntegers[i+1] * groupOfIntegers[i+2] * groupOfIntegers[i+3] * groupOfIntegers[i+4] * groupOfIntegers[i+5] * groupOfIntegers[i+6] * groupOfIntegers[i+7] * groupOfIntegers[i+8] * groupOfIntegers[i+9] * groupOfIntegers[i+10] * groupOfIntegers[i+11] * groupOfIntegers[i+12];
+            if(tempGreatestProduct > greatestProduct){
+                greatestProduct = tempGreatestProduct;
+                System.out.println("The new greatest Product is: "+greatestProduct);
             }
         }
 
